@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
-using Utility.Utility.Extension;
+using Utility.Extension;
 
 namespace ResourceRetriever
 {
