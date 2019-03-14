@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Version>0.1.0</Version>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Messerli.ResourceRetriever</AssemblyName>
+    <AssemblyName>Messerli.ServerCommunication</AssemblyName>
     <RootNamespace>Messerli.ServerCommunication</RootNamespace>
   </PropertyGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
