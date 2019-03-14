@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ServerCommunication
+namespace Messerli.ServerCommunication
 {
     public interface IObjectCreator
     {

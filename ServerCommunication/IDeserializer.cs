@@ -1,4 +1,4 @@
-﻿namespace ServerCommunication
+﻿namespace Messerli.ServerCommunication
 {
     public interface IDeserializer
     {

@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace ServerCommunication
+namespace Messerli.ServerCommunication
 {
     public class HttpResourceRetriever : IResourceRetriever
     {

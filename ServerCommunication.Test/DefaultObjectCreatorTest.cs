@@ -2,7 +2,7 @@
 using System;
 using Xunit;
 
-namespace ServerCommunication.Test
+namespace Messerli.ServerCommunication.Test
 {
     public class DefaultObjectCreatorTest
     {
@@ -95,9 +95,9 @@ namespace ServerCommunication.Test
                 return !Equals(left, right);
             }
 
-            #endregion
+            #endregion manualy created equality functions
         }
 
-        #endregion
+        #endregion TestStructures
     }
 }

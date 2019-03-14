@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <IsPackable>false</IsPackable>
+    <AssemblyName>Messerli.ServerCommunication.Test</AssemblyName>
+    <RootNamespace>Messerli.ServerCommunication.Test</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Equals.Fody" Version="1.9.5" />

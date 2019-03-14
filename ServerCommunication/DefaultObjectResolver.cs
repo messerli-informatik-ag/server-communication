@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Messerli.Utility.Extension;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Messerli.Utility.Extension;
 
-namespace ServerCommunication
+namespace Messerli.ServerCommunication
 {
     public class DefaultObjectResolver : IObjectResolver
     {

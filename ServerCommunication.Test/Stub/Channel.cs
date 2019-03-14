@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ServerCommunication.Test.Stub
+namespace Messerli.ServerCommunication.Test.Stub
 {
     [Equals]
     public class Channel

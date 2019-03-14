@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ServerCommunication
+namespace Messerli.ServerCommunication
 {
     public interface IObjectResolver
     {

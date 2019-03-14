@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using System;
 
-namespace ServerCommunication
+namespace Messerli.ServerCommunication
 {
     public class JsonDeserializer : IDeserializer
     {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace ServerCommunication
+namespace Messerli.ServerCommunication
 {
     public class DefaultObjectCreator : IObjectCreator
     {

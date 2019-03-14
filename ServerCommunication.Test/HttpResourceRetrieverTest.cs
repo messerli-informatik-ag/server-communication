@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using Xunit;
 
-namespace ServerCommunication.Test
+namespace Messerli.ServerCommunication.Test
 {
     public class HttpResourceRetrieverTest
     {

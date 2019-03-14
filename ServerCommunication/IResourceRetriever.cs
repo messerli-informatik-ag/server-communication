@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace ServerCommunication
+namespace Messerli.ServerCommunication
 {
     public interface IResourceRetriever
     {

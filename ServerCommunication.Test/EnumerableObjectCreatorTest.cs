@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Xunit;
 
-namespace ServerCommunication.Test
+namespace Messerli.ServerCommunication.Test
 {
     public class EnumerableObjectCreatorTest : DefaultObjectCreatorTest
     {

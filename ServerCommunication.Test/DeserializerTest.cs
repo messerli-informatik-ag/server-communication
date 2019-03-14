@@ -1,12 +1,12 @@
-using ServerCommunication.Test.Stub;
+using Messerli.ServerCommunication.Test.Stub;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Xunit;
-using Version = ServerCommunication.Test.Stub.Version;
+using Version = Messerli.ServerCommunication.Test.Stub.Version;
 
-namespace ServerCommunication.Test
+namespace Messerli.ServerCommunication.Test
 {
     public class DeserializerTest
     {
@@ -179,7 +179,7 @@ namespace ServerCommunication.Test
                     name: 'Foo',
                     channels: [],
                     modifiers: [
-                        { 
+                        {
                             identifier: 'abc',
                             displayedName: 'Abc',
                         }
