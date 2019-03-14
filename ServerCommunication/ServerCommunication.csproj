@@ -4,8 +4,5 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>ResourceRetriever</AssemblyName>
   </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Utility\Utility\Utility.csproj" />
-  </ItemGroup>
-  <Import Project="..\..\.paket\Paket.Restore.targets" />
+  <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>

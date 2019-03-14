@@ -12,7 +12,7 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ResourceRetriever\ResourceRetriever.csproj" />
+    <ProjectReference Include="..\ServerCommunication\ServerCommunication.csproj" />
   </ItemGroup>
-  <Import Project="..\..\.paket\Paket.Restore.targets" />
+  <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
