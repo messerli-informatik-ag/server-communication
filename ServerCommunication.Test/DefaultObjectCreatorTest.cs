@@ -1,4 +1,8 @@
-﻿namespace ServerCommunication.Test
+﻿using JetBrains.Annotations;
+using System;
+using Xunit;
+
+namespace ServerCommunication.Test
 {
     public class DefaultObjectCreatorTest
     {

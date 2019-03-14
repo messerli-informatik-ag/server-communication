@@ -1,4 +1,6 @@
-﻿namespace ServerCommunication
+﻿using System;
+
+namespace ServerCommunication
 {
     public class UnavailableResourceException : Exception
     {

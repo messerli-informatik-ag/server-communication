@@ -1,4 +1,8 @@
-﻿namespace ServerCommunication
+﻿using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+namespace ServerCommunication
 {
     public class HttpResourceRetriever : IResourceRetriever
     {

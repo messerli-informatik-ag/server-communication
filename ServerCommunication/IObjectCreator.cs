@@ -1,4 +1,7 @@
-﻿namespace ServerCommunication
+﻿using System;
+using System.Collections.Generic;
+
+namespace ServerCommunication
 {
     public interface IObjectCreator
     {

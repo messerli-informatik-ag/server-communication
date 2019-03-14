@@ -1,4 +1,9 @@
 using ServerCommunication.Test.Stub;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using Xunit;
 using Version = ServerCommunication.Test.Stub.Version;
 
 namespace ServerCommunication.Test

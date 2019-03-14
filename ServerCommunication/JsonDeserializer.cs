@@ -1,4 +1,8 @@
-﻿namespace ServerCommunication
+﻿using Messerli.Utility.Extension;
+using Newtonsoft.Json;
+using System;
+
+namespace ServerCommunication
 {
     public class JsonDeserializer : IDeserializer
     {

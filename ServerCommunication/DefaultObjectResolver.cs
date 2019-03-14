@@ -1,4 +1,11 @@
-﻿namespace ServerCommunication
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using Messerli.Utility.Extension;
+
+namespace ServerCommunication
 {
     public class DefaultObjectResolver : IObjectResolver
     {

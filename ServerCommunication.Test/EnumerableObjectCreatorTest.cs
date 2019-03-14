@@ -1,4 +1,7 @@
-﻿namespace ServerCommunication.Test
+﻿using System.Collections.Generic;
+using Xunit;
+
+namespace ServerCommunication.Test
 {
     public class EnumerableObjectCreatorTest : DefaultObjectCreatorTest
     {

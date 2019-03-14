@@ -1,4 +1,12 @@
-﻿namespace ServerCommunication.Test
+﻿using NSubstitute;
+using NSubstitute.ExceptionExtensions;
+using RichardSzalay.MockHttp;
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using Xunit;
+
+namespace ServerCommunication.Test
 {
     public class HttpResourceRetrieverTest
     {

@@ -1,4 +1,10 @@
-﻿namespace ServerCommunication
+﻿using Messerli.Utility.Extension;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ServerCommunication
 {
     public class EnumerableObjectCreator : DefaultObjectCreator
     {
