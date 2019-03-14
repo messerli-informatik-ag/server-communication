@@ -1,4 +1,4 @@
-﻿namespace ResourceRetriever
+﻿namespace ServerCommunication
 {
     public interface IDeserializer
     {

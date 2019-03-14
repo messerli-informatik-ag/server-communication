@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using Xunit;
-
-namespace ResourceRetriever.Test
+﻿namespace ServerCommunication.Test
 {
     public class EnumerableObjectCreatorTest : DefaultObjectCreatorTest
     {

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using Utility.Extension;
-
-namespace ResourceRetriever
+﻿namespace ServerCommunication
 {
     public class EnumerableObjectCreator : DefaultObjectCreator
     {

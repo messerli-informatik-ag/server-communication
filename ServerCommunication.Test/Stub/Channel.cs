@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace ResourceRetriever.Test.Stub
+namespace ServerCommunication.Test.Stub
 {
     [Equals]
     public class Channel

@@ -3,14 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResourceRetriever", "ResourceRetriever\ResourceRetriever.csproj", "{22DAFD40-6626-43A2-B7FC-CC215FE93D49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerCommunication", "ServerCommunication\ServerCommunication.csproj", "{22DAFD40-6626-43A2-B7FC-CC215FE93D49}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResourceRetriever.Test", "ResourceRetriever.Test\ResourceRetriever.Test.csproj", "{97E49328-AA42-4A53-A161-7F403F706131}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerCommunication.Test", "ServerCommunication.Test\ServerCommunication.Test.csproj", "{97E49328-AA42-4A53-A161-7F403F706131}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{79A543DC-193B-4B58-9ABB-0CC38E1406B9}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		license_apache.txt = license_apache.txt
 		license_mit.txt = license_mit.txt
+		paket.dependencies = paket.dependencies
 		readme.md = readme.md
 	EndProjectSection
 EndProject

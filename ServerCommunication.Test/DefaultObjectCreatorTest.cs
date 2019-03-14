@@ -1,8 +1,4 @@
-﻿using JetBrains.Annotations;
-using System;
-using Xunit;
-
-namespace ResourceRetriever.Test
+﻿namespace ServerCommunication.Test
 {
     public class DefaultObjectCreatorTest
     {

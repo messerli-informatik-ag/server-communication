@@ -1,4 +1,4 @@
-namespace ResourceRetriever.Test.Stub
+namespace ServerCommunication.Test.Stub
 {
     [Equals]
     public class Modifier

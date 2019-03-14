@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using Utility.Extension;
-
-namespace ResourceRetriever
+﻿namespace ServerCommunication
 {
     public class DefaultObjectResolver : IObjectResolver
     {

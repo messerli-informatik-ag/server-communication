@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ResourceRetriever
+﻿namespace ServerCommunication
 {
     public class UnavailableResourceException : Exception
     {

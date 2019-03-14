@@ -1,8 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
-using Utility.Extension;
-
-namespace ResourceRetriever
+﻿namespace ServerCommunication
 {
     public class JsonDeserializer : IDeserializer
     {

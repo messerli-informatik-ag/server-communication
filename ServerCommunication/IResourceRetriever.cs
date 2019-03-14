@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-
-namespace ResourceRetriever
+﻿namespace ServerCommunication
 {
     public interface IResourceRetriever
     {
