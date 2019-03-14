@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>MesserliInformatikAg.ServerCommunication</id>
+    <version>0.1.0</version>
+    <authors>Jan Nils Ferner, Dominic Groth, Thomas Bruderer</authors>
+    <owners>messerli-informatik-ag</owners>
+    <projectUrl>http://github.com/messerli-informatik-ag/server-communication</projectUrl>
+    <license type="expression">MIT or Apache-2.0</license>
+    <description>Class library dealing with HTTP communication and the retrieval and deserialization of resources.</description>
+    <copyright>Copyright ©2019 Messerli Informatik AG</copyright>
+    <dependencies>
+      <dependency id="JetBrains.Annotations" version="[2018.2.0,2019.0.0)" />
+      <dependency id="Messerli.Utility" version="[0.1.0,1.0.0)" />
+      <dependency id="Newtonsoft.Json" version="[11.0.0,12.0.0)" />
+    </dependencies>
+    <tags>rest requests</tags>
+  </metadata>
+</package>
