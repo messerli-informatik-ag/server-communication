@@ -5,9 +5,9 @@
         <version>0.1.0</version>
         <authors>Jan Nils Ferner, Dominic Groth, Thomas Bruderer</authors>
         <owners>messerli-informatik-ag</owners>
-        <projectUrl>http://github.com/messerli-informatik-ag/utility</projectUrl>
+        <projectUrl>http://github.com/messerli-informatik-ag/server-communication</projectUrl>
         <license type="expression">MIT or Apache-2.0</license>
-        <description>Rest request library</description>
+        <description>Class library dealing with HTTP communication and the retrieval and deserialization of resources.</description>
         <copyright>Copyright ©2019 Messerli Informatik AG</copyright>
         <tags>rest requests</tags>
     </metadata>
