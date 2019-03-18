@@ -16,13 +16,13 @@ namespace Messerli.ServerCommunication
 
         public virtual object Resolve(Type type, object current)
         {
-            return Resolve(new ResolveTreeNode(type, current, null));
+            return Resolve(new ResolveObject(type, current, null));
         }
 
-        public virtual object Resolve(ResolveTreeNode resolveTree)
+        public virtual object Resolve(ResolveObject resolveObject)
         {
-            var type = resolveTree.CurrentType;
-            var current = resolveTree.Current;
+            var type = resolveObject.CurrentType;
+            var current = resolveObject.Current;
 
             if (!type.IsEnumerable() || type == typeof(string))
             {
@@ -40,7 +40,7 @@ namespace Messerli.ServerCommunication
                     return current;
                 }
 
-                var resolvedParameters = GetParameterValues(constructor, resolveTree);
+                var resolvedParameters = GetParameterValues(constructor, resolveObject);
 
                 return constructor.Invoke(resolvedParameters.ToArray());
             }
@@ -56,14 +56,14 @@ namespace Messerli.ServerCommunication
             return list;
         }
 
-        private IEnumerable<object> GetParameterValues(ConstructorInfo constructor, ResolveTreeNode resolveTree)
+        private IEnumerable<object> GetParameterValues(ConstructorInfo constructor, ResolveObject resolveObject)
         {
-            var type = resolveTree.CurrentType;
-            var current = resolveTree.Current;
+            var type = resolveObject.CurrentType;
+            var current = resolveObject.Current;
 
             return GetParameterTypes(constructor)
                 .Zip(type.GetPropertyValues(current), Tuple.Create)
-                .Select(t => Resolve(new ResolveTreeNode(t.Item1, t.Item2, resolveTree)));
+                .Select(t => Resolve(new ResolveObject(t.Item1, t.Item2, resolveObject)));
         }
 
         internal static IEnumerable<Type> GetParameterTypes(ConstructorInfo constructor)
