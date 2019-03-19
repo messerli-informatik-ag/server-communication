@@ -4,14 +4,14 @@ namespace Messerli.ServerCommunication
 {
     public class ObjectToResolve
     {
-        public ObjectToResolve(Type currentType, object current, ObjectToResolve parent)
+        public ObjectToResolve(Type type, object current, ObjectToResolve parent)
         {
-            CurrentType = currentType;
+            Type = type;
             Current = current;
             Parent = parent;
         }
 
-        public Type CurrentType { get; }
+        public Type Type { get; }
 
         public object Current { get; }
 

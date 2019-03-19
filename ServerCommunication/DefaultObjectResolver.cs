@@ -21,7 +21,7 @@ namespace Messerli.ServerCommunication
 
         public virtual object Resolve(ObjectToResolve objectToResolve)
         {
-            var type = objectToResolve.CurrentType;
+            var type = objectToResolve.Type;
             var current = objectToResolve.Current;
 
             if (!type.IsEnumerable() || type == typeof(string))
@@ -58,7 +58,7 @@ namespace Messerli.ServerCommunication
 
         private IEnumerable<object> GetParameterValues(ConstructorInfo constructor, ObjectToResolve objectToResolve)
         {
-            var type = objectToResolve.CurrentType;
+            var type = objectToResolve.Type;
             var current = objectToResolve.Current;
 
             return GetParameterTypes(constructor)
