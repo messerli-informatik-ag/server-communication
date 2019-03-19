@@ -16,13 +16,13 @@ namespace Messerli.ServerCommunication
 
         public virtual object Resolve(Type type, object current)
         {
-            return Resolve(new ResolveObject(type, current, null));
+            return Resolve(new ObjectToResolve(type, current, null));
         }
 
-        public virtual object Resolve(ResolveObject resolveObject)
+        public virtual object Resolve(ObjectToResolve objectToResolve)
         {
-            var type = resolveObject.CurrentType;
-            var current = resolveObject.Current;
+            var type = objectToResolve.CurrentType;
+            var current = objectToResolve.Current;
 
             if (!type.IsEnumerable() || type == typeof(string))
             {
@@ -40,7 +40,7 @@ namespace Messerli.ServerCommunication
                     return current;
                 }
 
-                var resolvedParameters = GetParameterValues(constructor, resolveObject);
+                var resolvedParameters = GetParameterValues(constructor, objectToResolve);
 
                 return constructor.Invoke(resolvedParameters.ToArray());
             }
@@ -56,14 +56,14 @@ namespace Messerli.ServerCommunication
             return list;
         }
 
-        private IEnumerable<object> GetParameterValues(ConstructorInfo constructor, ResolveObject resolveObject)
+        private IEnumerable<object> GetParameterValues(ConstructorInfo constructor, ObjectToResolve objectToResolve)
         {
-            var type = resolveObject.CurrentType;
-            var current = resolveObject.Current;
+            var type = objectToResolve.CurrentType;
+            var current = objectToResolve.Current;
 
             return GetParameterTypes(constructor)
                 .Zip(type.GetPropertyValues(current), Tuple.Create)
-                .Select(t => Resolve(new ResolveObject(t.Item1, t.Item2, resolveObject)));
+                .Select(t => Resolve(new ObjectToResolve(t.Item1, t.Item2, objectToResolve)));
         }
 
         internal static IEnumerable<Type> GetParameterTypes(ConstructorInfo constructor)

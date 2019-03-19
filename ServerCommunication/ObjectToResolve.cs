@@ -2,9 +2,9 @@
 
 namespace Messerli.ServerCommunication
 {
-    public class ResolveObject
+    public class ObjectToResolve
     {
-        public ResolveObject(Type currentType, object current, ResolveObject parent)
+        public ObjectToResolve(Type currentType, object current, ObjectToResolve parent)
         {
             CurrentType = currentType;
             Current = current;
@@ -15,6 +15,6 @@ namespace Messerli.ServerCommunication
 
         public object Current { get; }
 
-        public ResolveObject Parent { get; }
+        public ObjectToResolve Parent { get; }
     }
 }
