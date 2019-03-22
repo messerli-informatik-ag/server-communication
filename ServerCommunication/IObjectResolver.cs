@@ -7,5 +7,7 @@ namespace Messerli.ServerCommunication
         T Resolve<T>(T current);
 
         object Resolve(Type type, object current);
+
+        object Resolve(ObjectToResolve objectToResolve);
     }
 }
