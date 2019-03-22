@@ -31,7 +31,7 @@ namespace Messerli.ServerCommunication.Test
 
         private static IDeserializer ResolveDeserializer()
         {
-            return new JsonDeserializer(new EnumerableObjectCreator(), new DefaultObjectResolver());
+            return new JsonDeserializer(new EnumerableObjectCreator());
         }
 
         public class ValidJsonTestData : IEnumerable<object[]>
