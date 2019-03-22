@@ -50,7 +50,7 @@ namespace Messerli.ServerCommunication
 
             foreach (var element in (IEnumerable)current)
             {
-                list.Add(Resolve(innerType, element));
+                list.Add(Resolve(new ObjectToResolve(innerType, element, objectToResolve)));
             }
 
             return list;
