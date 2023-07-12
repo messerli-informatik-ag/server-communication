@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <Version>0.1.0</Version>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Messerli.ServerCommunication</AssemblyName>
-    <RootNamespace>Messerli.ServerCommunication</RootNamespace>
-  </PropertyGroup>
-  <Import Project="..\.paket\Paket.Restore.targets" />
+<Project Sdk="Microsoft.NET.Sdk; Microsoft.Build.CentralPackageVersions">
+    <PropertyGroup>
+        <Version>0.1.1</Version>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Messerli.ServerCommunication</AssemblyName>
+        <RootNamespace>Messerli.ServerCommunication</RootNamespace>
+        <Authors>Messerli Informatik AG</Authors>
+        <Copyright>© Messerli Informatik AG. All rights reserved.</Copyright>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Messerli.Utility" />
+        <PackageReference Include="Newtonsoft.Json" />
+    </ItemGroup>
 </Project>

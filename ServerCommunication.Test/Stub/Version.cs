@@ -1,6 +1,5 @@
 namespace Messerli.ServerCommunication.Test.Stub
 {
-    [Equals]
     public class Version
     {
         public string Value { get; }
