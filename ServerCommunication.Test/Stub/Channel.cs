@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace Messerli.ServerCommunication.Test.Stub
 {
-    [Equals]
     public class Channel
     {
         public Channel(string name, IReadOnlyCollection<Version> availableVersions)

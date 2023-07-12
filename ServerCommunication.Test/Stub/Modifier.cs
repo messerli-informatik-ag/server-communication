@@ -1,6 +1,5 @@
 namespace Messerli.ServerCommunication.Test.Stub
 {
-    [Equals]
     public class Modifier
     {
         public string Identifier { get; }

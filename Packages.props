@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <PackageReference Update="Messerli.Utility" Version="[0.1, 1)" />
+        <PackageReference Update="Newtonsoft.Json" Version="[11.0.1, 12)" />
+        <PackageReference Update="NSubstitute" Version="[3.1, 4)" />
+        <PackageReference Update="RichardSzalay.MockHttp" Version="[5.0, 6)" />
+        <PackageReference Update="JetBrains.Annotations" Version="[2018.2.1, 2019)" />
+        <PackageReference Update="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+        <PackageReference Update="xunit" Version="2.4.0" />
+        <PackageReference Update="xunit.runner.visualstudio" Version="2.4.0" />
+    </ItemGroup>
+</Project>
+
